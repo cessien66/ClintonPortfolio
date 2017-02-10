@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact ' });
+  res.render('contact', { title: 'Contact ' });
 });
 //or should i use this structure
 //app.get(path, callback(req, res, next))
