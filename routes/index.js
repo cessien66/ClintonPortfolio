@@ -8,8 +8,14 @@ router.get('/', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact ' });
 });
-//or should i use this structure
-//app.get(path, callback(req, res, next))
-//res.render(view, locals)
-//Thanks
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'Contact ' });
+});
+router.get('/project', function(req, res, next) {
+  res.render('project', { title: 'Contact ' });
+});
+router.get('/service', function(req, res, next) {
+  res.render('service', { title: 'Contact ' });
+});
+
 module.exports = router;
