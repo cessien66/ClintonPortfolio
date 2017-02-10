@@ -5,5 +5,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
+router.get('/contact', function(req, res, next) {
+  res.render('index', { title: 'Contact ' });
+});
+//or should i use this structure
+//app.get(path, callback(req, res, next))
+//res.render(view, locals)
 module.exports = router;
