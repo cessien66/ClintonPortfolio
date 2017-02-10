@@ -11,4 +11,5 @@ router.get('/contact', function(req, res, next) {
 //or should i use this structure
 //app.get(path, callback(req, res, next))
 //res.render(view, locals)
+//Thanks
 module.exports = router;
